@@ -66,6 +66,7 @@ var GoogleMaps = (function(document) {
           this.markers[j].setMap(this.map);
         }
       }
+
     };
   };
 

@@ -22,26 +22,19 @@
           lat: -37.83232752310328,
           lng: 144.93427991867065,
           markerTitle: 'Fabric Group',
+          buttonId: 'posMelbourne',
           isDefault: true
         }, {
           name: 'DaLian',
           lat: 38.847000,
           lng: 121.509789,
-          markerTitle: 'Fabric Group'
+          markerTitle: 'Fabric Group',
+          buttonId: 'posDalian posSydney'
         }],
         zoom: 16
       });
 
       Map.startup();
-
-      setTimeout(function() {
-        this.map.panTo({
-          name: 'DaLian',
-          lat: 38.847000,
-          lng: 121.509789,
-          markerTitle: 'Fabric Group'
-        });
-      }, 3000);
     }
     </script>
 <body onload="initialize()">
