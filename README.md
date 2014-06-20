@@ -1,4 +1,4 @@
-google-maps
+Google Maps v3
 ===========
 
 Custom Google Maps
