@@ -5,24 +5,50 @@
   <title>demo</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0; background-color: #ccc}
-      #google-map { height: 100% }
-    </style>
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0; background-color: #ccc}
+  #google-map { height: 100% }
+  </style>
+  <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-      <script type="text/javascript"
+  <script type="text/javascript"
       src="//maps.googleapis.com/maps/api/js?key=AIzaSyCcjnlErfb_FmNXZh3lmkrK6X73dpRayf4&sensor=true"></script>
   <script src="js/google-maps.js"></script>
   <script>
     function initialize() {
-      var map = new GoogleMaps('google-map');
+      var Map = new GoogleMaps('google-map', {
+        places: [{
+          name: 'Melbourne',
+          lat: -37.83232752310328,
+          lng: 144.93427991867065,
+          markerTitle: 'Fabric Group',
+          isDefault: true
+        }, {
+          name: 'DaLian',
+          lat: 38.847000,
+          lng: 121.509789,
+          markerTitle: 'Fabric Group'
+        }],
+        zoom: 16
+      });
+
+      Map.startup();
+
+      setTimeout(function() {
+        this.map.panTo({
+          name: 'DaLian',
+          lat: 38.847000,
+          lng: 121.509789,
+          markerTitle: 'Fabric Group'
+        });
+      }, 3000);
     }
     </script>
 <body onload="initialize()">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-push-2">
-        <div id="google-map" style="width:100%; height:300px; margin-top: 100px;"></div>
+      <div class="col-md-10 col-md-push-1">
+        <div id="google-map" style="width:100%; height:400px; margin-top: 100px;"></div>
       </div>
     </div>
   </div>
