@@ -1,7 +1,7 @@
 Google Maps v3
 ===========
 
-Custom Google Maps
+Custom Google Maps.
 
 ## Screenshot
 
