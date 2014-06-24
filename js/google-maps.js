@@ -56,6 +56,7 @@ var GoogleMaps = (function(document) {
                   this.defaultPlace.lng),
         zoom: this.zoom,
         mapTypeId: 'Styled'
+        // scrollwheel: false
       });
       this.map.mapTypes.set('Styled', styledMapType);
 
