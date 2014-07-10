@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="gMapApp">
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>demo</title>
+  <style type="text/css">
+  html,
+  body,
+  .container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%
+  }
+  .angular-google-map-container {
+    margin: 100px auto auto auto;
+    width: 1000px;
+    height: 618px;
+  }
+  </style>
+</head>
+<body ng-controller="GoogleMapController">
+  <div class="container">
+    <google-map center="map.center" zoom="map.zoom"></google-map>
+  </div>
+
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCcjnlErfb_FmNXZh3lmkrK6X73dpRayf4&sensor=true"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/lodash/dist/lodash.underscore.js"></script>
+  <script src='bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
+  <script src="js/google-maps-ng.js"></script>
+</body>
+</html>
