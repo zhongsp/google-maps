@@ -1,0 +1,21 @@
+{
+  "name": "google-maps",
+  "version": "0.1.0",
+  "homepage": "https://github.com/zhongsp/google-maps",
+  "authors": [
+    "zhongsp <patrick.zhongsp@gmail.com>"
+  ],
+  "description": "google maps",
+  "main": "google-maps.js",
+  "keywords": [
+    "google",
+    "maps"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "angular-google-maps": "~1.1.7",
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1"
+  }
+}
