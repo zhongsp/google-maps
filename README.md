@@ -1,6 +1,8 @@
 Google Maps v3
 ===========
 
+[Live sample](http://zhongsp.github.io/google-maps)
+
 Custom Google Maps.
 
 # Get started
